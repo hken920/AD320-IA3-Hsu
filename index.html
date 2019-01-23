@@ -1,0 +1,76 @@
+<style>
+div#one {
+margin:30px 30px;;
+background-color:yellow;
+padding:20px 20px;
+
+}
+
+div#two{
+margin:30px 30px;;
+background-color: green;
+padding:20px 20px;
+
+}
+
+div#three {
+margin:30px 30px;;
+background-color:purple;
+padding:20px 20px;
+
+}
+
+div#four{
+margin:30px 30px;;
+background-color:red;
+padding:20px 20px;
+
+}
+
+div#five {
+margin:30px 30px;;
+background-color:blue;
+padding:20px 20px;
+
+}
+
+</style>
+
+<html lang ="en">
+	<head>
+		<title>Week 3 assignment</title>
+	</head>
+	
+	<body onload="checkCookies()">
+		<h1>Assignment #3 DOM</h1>
+		
+		<div id="one">
+			<p onclick="changeText(this)">Click Here!</p>
+		</div>
+		
+		<div id="two">
+			Enter your name: <input type="text" id="fname" onchange="myFunction()">
+			<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+			<p id="addEventResult2"></p>
+		</div>
+		
+		<div id="three">
+			<p onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" >Mouse Over Me</p>
+			<p>Try resizing this browser window to trigger the "resize" event handler.</p>
+			<p id="addEventResult3"></p>
+		</div>
+
+		<div id="four">	
+			<button onclick="displayDate()">The time is?</button>
+			<p id="result4"></p>
+			<p id="addEventResult4"></p>
+		</div>
+		
+		<div id="five">
+			<p id="result5"></p>
+			<p id="addEventResult5"></p>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
